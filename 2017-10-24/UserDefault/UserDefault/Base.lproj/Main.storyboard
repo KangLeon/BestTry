@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYq-IJ-Puj">
+                                <rect key="frame" x="141" y="83" width="92" height="30"/>
+                                <color key="backgroundColor" red="0.38749132679999998" green="0.79009039810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="增加偏好设置">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPreference:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3p-Xt-lHh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS3-wO-rvy">
+                                <rect key="frame" x="141" y="160" width="92" height="30"/>
+                                <color key="backgroundColor" red="0.38749132679999998" green="0.79009039810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="读取偏好存储">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readPreference:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqb-af-YGN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KK-Fj-AG3">
+                                <rect key="frame" x="141" y="239" width="92" height="30"/>
+                                <color key="backgroundColor" red="0.38749132679999998" green="0.79009039810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="修改偏好存储">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyPreference:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64c-bj-mry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj5-55-8bs">
+                                <rect key="frame" x="141" y="326" width="92" height="30"/>
+                                <color key="backgroundColor" red="0.38749132679999998" green="0.79009039810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="删除偏好存储">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePreference:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhO-C6-Zvd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq8-7X-I4R">
+                                <rect key="frame" x="126" y="403" width="123" height="30"/>
+                                <color key="backgroundColor" red="0.38749132679999998" green="0.79009039810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="清空所有偏好存储">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAllPreference:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHm-Gu-Olr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yYq-IJ-Puj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Fe-80-dQN"/>
+                            <constraint firstItem="DS3-wO-rvy" firstAttribute="top" secondItem="yYq-IJ-Puj" secondAttribute="bottom" constant="47" id="5i9-lx-0ww"/>
+                            <constraint firstItem="yYq-IJ-Puj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="ADn-Qz-h5S"/>
+                            <constraint firstItem="Uq8-7X-I4R" firstAttribute="top" secondItem="Xj5-55-8bs" secondAttribute="bottom" constant="47" id="CoS-sd-kaT"/>
+                            <constraint firstItem="DS3-wO-rvy" firstAttribute="leading" secondItem="0KK-Fj-AG3" secondAttribute="leading" id="ec1-6o-odQ"/>
+                            <constraint firstItem="Xj5-55-8bs" firstAttribute="top" secondItem="0KK-Fj-AG3" secondAttribute="bottom" constant="57" id="gmK-Ac-l6r"/>
+                            <constraint firstItem="0KK-Fj-AG3" firstAttribute="top" secondItem="DS3-wO-rvy" secondAttribute="bottom" constant="49" id="jsd-t7-w7r"/>
+                            <constraint firstItem="yYq-IJ-Puj" firstAttribute="leading" secondItem="DS3-wO-rvy" secondAttribute="leading" id="w3r-pK-Gi6"/>
+                            <constraint firstItem="Xj5-55-8bs" firstAttribute="centerX" secondItem="Uq8-7X-I4R" secondAttribute="centerX" id="xfS-WT-5QB"/>
+                            <constraint firstItem="0KK-Fj-AG3" firstAttribute="leading" secondItem="Xj5-55-8bs" secondAttribute="leading" id="zWI-Q5-RJi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

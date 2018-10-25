@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mycell" id="gTV-IL-0wX" customClass="myCell">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="15Y-qw-0Wu">
+                        <rect key="frame" x="20" y="8" width="55" height="52"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mZ-bg-7eV">
+                        <rect key="frame" x="26" y="59" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.52187470603677055" blue="0.43571356565782204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="15Y-qw-0Wu" secondAttribute="bottom" constant="20" id="8At-qF-OQF"/>
+                <constraint firstItem="15Y-qw-0Wu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="AAY-M5-O6p"/>
+                <constraint firstItem="15Y-qw-0Wu" firstAttribute="centerX" secondItem="8mZ-bg-7eV" secondAttribute="centerX" id="CCx-vz-ZVe"/>
+                <constraint firstItem="8mZ-bg-7eV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Qr3-Fh-kpO"/>
+                <constraint firstItem="15Y-qw-0Wu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="boO-OB-aFo"/>
+                <constraint firstAttribute="bottom" secondItem="8mZ-bg-7eV" secondAttribute="bottom" id="ejT-ze-KKK"/>
+            </constraints>
+            <size key="customSize" width="130" height="122"/>
+            <connections>
+                <outlet property="cellImage" destination="15Y-qw-0Wu" id="yEH-yl-uoS"/>
+                <outlet property="cellLabel" destination="8mZ-bg-7eV" id="qEv-4E-Nuv"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="-37"/>
+        </collectionViewCell>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Z1C-Q0-Q6i">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <point key="canvasLocation" x="174" y="237"/>
+        </collectionViewCell>
+    </objects>
+</document>

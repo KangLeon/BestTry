@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOX-CR-WDb">
+                                <rect key="frame" x="152" y="241" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.38749132679999998" green="0.79009039810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="下单">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="order_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cs5-Xq-bc4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火锅类型：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dob-qu-hcp">
+                                <rect key="frame" x="119" y="289" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="汤料：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHX-uy-Ssf">
+                                <rect key="frame" x="119" y="328" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="饮料：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxm-RN-JA7">
+                                <rect key="frame" x="119" y="369" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDe-CE-p2o">
+                                <rect key="frame" x="214" y="310" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm2-sZ-Osc">
+                                <rect key="frame" x="179" y="349" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-rF-7s3">
+                                <rect key="frame" x="179" y="390" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HDe-CE-p2o" firstAttribute="leading" secondItem="dob-qu-hcp" secondAttribute="trailing" constant="8" symbolic="YES" id="2rv-gh-Vg1"/>
+                            <constraint firstItem="dob-qu-hcp" firstAttribute="leading" secondItem="iHX-uy-Ssf" secondAttribute="leading" id="3oI-ix-pB6"/>
+                            <constraint firstItem="iHX-uy-Ssf" firstAttribute="leading" secondItem="sxm-RN-JA7" secondAttribute="leading" id="AjH-ez-Ekc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOX-CR-WDb" secondAttribute="trailing" constant="145" id="BVR-md-bIh"/>
+                            <constraint firstItem="BOX-CR-WDb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="221" id="KIL-FK-90R"/>
+                            <constraint firstItem="BOX-CR-WDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="OqA-IB-qdd"/>
+                            <constraint firstItem="dob-qu-hcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="Rd8-Ei-EKF"/>
+                            <constraint firstItem="dob-qu-hcp" firstAttribute="top" secondItem="BOX-CR-WDb" secondAttribute="bottom" constant="18" id="dMT-VA-RkK"/>
+                            <constraint firstItem="iHX-uy-Ssf" firstAttribute="baseline" secondItem="Mm2-sZ-Osc" secondAttribute="baseline" id="gQN-N8-acs"/>
+                            <constraint firstItem="Mm2-sZ-Osc" firstAttribute="leading" secondItem="ZTZ-rF-7s3" secondAttribute="leading" id="lVb-di-LFh"/>
+                            <constraint firstItem="iHX-uy-Ssf" firstAttribute="top" secondItem="dob-qu-hcp" secondAttribute="bottom" constant="18" id="lgB-wi-cJK"/>
+                            <constraint firstItem="sxm-RN-JA7" firstAttribute="baseline" secondItem="ZTZ-rF-7s3" secondAttribute="baseline" id="mwB-eb-wji"/>
+                            <constraint firstItem="sxm-RN-JA7" firstAttribute="top" secondItem="iHX-uy-Ssf" secondAttribute="bottom" constant="20" id="oKv-Ww-wrG"/>
+                            <constraint firstItem="dob-qu-hcp" firstAttribute="baseline" secondItem="HDe-CE-p2o" secondAttribute="baseline" id="oVS-tt-69h"/>
+                            <constraint firstItem="Mm2-sZ-Osc" firstAttribute="leading" secondItem="iHX-uy-Ssf" secondAttribute="trailing" constant="8" symbolic="YES" id="zOE-jv-5os"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drink_label" destination="ZTZ-rF-7s3" id="XRQ-up-2WL"/>
+                        <outlet property="main_label" destination="HDe-CE-p2o" id="WDH-Af-gLx"/>
+                        <outlet property="order_button" destination="BOX-CR-WDb" id="Idh-kq-1Ug"/>
+                        <outlet property="typelabel" destination="Mm2-sZ-Osc" id="d0H-2o-fXf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
